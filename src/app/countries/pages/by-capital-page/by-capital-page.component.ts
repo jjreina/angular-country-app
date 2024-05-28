@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-by-capital-page',
   templateUrl: './by-capital-page.component.html',
-  styles: ``
+  styles: ``,
 })
-export class ByCapitalPageComponent {
-
-}
+export class ByCapitalPageComponent {}
