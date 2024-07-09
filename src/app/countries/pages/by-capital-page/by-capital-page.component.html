@@ -13,6 +13,9 @@
 <hr />
 <div class="row">
   <div class="col">
+    @if (isLoading) {
+    <shared-loading-spinner></shared-loading-spinner>
+    }
     <ul>
       <countries-country-table
         [countries]="countries"
