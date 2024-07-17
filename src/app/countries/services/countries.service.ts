@@ -12,10 +12,7 @@ export class CountrieService {
   constructor(private httpClient: HttpClient) {}
 
   private getCountriesRequest = (url: string): Observable<Country[]> => {
-    return this.httpClient.get<Country[]>(url).pipe(
-      catchError(() => of([])),
-      delay(2000)
-    );
+    return this.httpClient.get<Country[]>(url).pipe(catchError(() => of([])));
   };
 
   public searchCountryByAlphaCode = (
